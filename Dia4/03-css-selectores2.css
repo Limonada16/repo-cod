@@ -1,0 +1,78 @@
+.titulo_h3{
+    color: blue;
+}
+
+/*Selectores de etiquetas*/
+header{
+    /*Todas las etiquetas header*/
+    background-color: purple;
+}
+h1{
+    /*Todas las etiquetas h1*/
+    color: #eee;
+}
+h2{
+    /*Todas las etiquetas h2*/
+    font-family: sans-serif;
+}
+
+section, aside{
+    /*Todas las etiquetas section
+    y aside tendran un borde*/
+    border: 1px solid grey;
+}
+a{
+    color: crimson;
+}
+.enlace_importante{
+    /*Todas las etiquetas o elementos
+    que tengan la clase: enlace_importante*/
+    color: thistle;
+
+}
+.titulo_h3{
+    color: peru;
+}
+.boton_navegacion{
+    text-decoration: none;
+    font-family: cursive;
+    color: yellow;
+}
+button.boton_navegacion{
+    /*Todas las etiquetas Button que tengan la
+    clase boton_navegacion*/
+    color: royalblue;
+}
+.boton_navegacion.activo{
+    box-shadow: #bbb 0px 0px 20px;
+}
+#miFooter{
+    background-color: #ccc;
+}
+article p{
+    /*Todos los parrafos que esten como hijos
+    o nietos o bisnietos de un article*/
+    color: #444;
+    text-indent: 10px;
+}
+section > p{
+    /*Todos los parrafos que sean hijos en primer
+    nivel de un section*/
+    font-size: 13px;
+    color: #bbb;
+
+}
+.publicidad_imagen + figcaption{
+    /*Todos los figcaption proximo directo
+    que sean hermanos directos
+    directos de un elemnto con clase="publicidad_imagen"*/
+    font-style: italic;
+    font-size: 12px;
+}
+#miFooter a ~ button{
+    /*Todos los buttons que sean hermanos de a
+    y estos que sean hijos de un elemento de id
+    #miFooter*/
+    border-radius: 6px;
+    background-color: salmon;
+}

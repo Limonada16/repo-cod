@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      color: #eee;
+      background-color: #444;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Tablas challenge</h1>
+    <p><em>[Alonso Conde Sánchez]</em></p>
+  </header>
+  <section>
+    <main>
+        <table border="1">
+            <thead>
+                <td colspan="2">Cabecera 1</td>
+                <td colspan="2">Cabecera 2</td>
+                <tr>
+                    <td>cab3</td>
+                    <td>cab4</td>
+                    <td>cab5</td>
+                    <td>cab6</td>
+                </tr>
+                <tr>
+                    <td>x</td>
+                    <td>x</td>
+                    <td>x</td>
+                    <td>x</td>
+                </tr>
+                <tr>
+                    <td>x</td>
+                    <td>x</td>
+                    <td>x</td>
+                    <td>x</td>
+                </tr>
+            </thead>
+        </table>
+    </main>
+  </section>
+  <hr>
+  <h4>Combinando filas</h4>
+  <table border="1">
+      <tr>
+          <td rowspan="2">1</td> <td>2</td> <td>3</td>
+      </tr>
+      <tr>
+          <td>4</td> <td>5</td>
+      </tr>
+      <tr>
+          <td colspan = "3">6</td>
+          
+      </tr>
+  </table>
+  <hr>
+  <h4>Combinando filas</h4>
+  <table border="1">
+      <tr>
+        <td></td> <td rowspan="2"></td> <td colspan="2"><strong>Media</strong></td>
+      </tr>
+      <tr>
+        <td></td> <td><strong>Altura</strong></td> <td><strong>Peso</strong></td>
+      </tr>
+      <tr>
+          <td rowspan="2"><strong>Sexo</strong></td> <td><strong>Hombres</strong></td> <td>1.9</td> <td>85</td>
+      </tr>
+      <tr>
+          <td><strong>Mujeres</strong></td> <td>1.7</td> <td>60</td>
+      </tr>
+    
+  </table>
+
+</body>
+
+</html>

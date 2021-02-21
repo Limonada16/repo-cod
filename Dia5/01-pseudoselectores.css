@@ -1,0 +1,73 @@
+/*Links no visitados*/
+.nav_link:link{
+    color: darkgreen;
+}
+/*Links visitados*/
+.nav_link:visited{
+    color: darkmagenta;
+}
+/*Cuando el elemento esta siendo clickeado*/
+.nav_link:active{
+    color: darkred;
+}
+
+.btn_guardar{
+    border: none;
+    outline: none;
+    background-color: cyan;
+    color: white;
+    padding: 10px;
+}
+/*Efecto Cuando el mouse pasa por el elemento*/
+.btn_guardar:hover{
+    transform: translate(0,1px);
+    cursor: pointer;
+
+}
+.btn_guardar:active{
+    transform: translate(0,2px) scale(0.96);
+    box-shadow: 0px 2px 10px #888;
+}
+input{
+    outline: none;
+    border: none;
+    padding: 4px 5px;
+    font-size: 18px;
+    border-bottom: 2px solid #a969d8;
+    margin-left: 10px;
+}
+/*Focus: cuando el cursos se encuentra sobre un input*/
+input:focus{
+    border-bottom: 2px solid magenta;
+
+}
+.tabla thead tr:nth-child(1){
+    /*De la lista de TR heramnos que sean hijos
+    de un thead, que a su vez sea hijo de un elemento
+    con clase .tabla
+    De todos esos TRs. el primero*/
+    background-color: indigo;
+    color: white;
+}
+.tabla tbody tr td:nth-child(5){
+    background-color: cyan;
+}
+.tabla tbody tr:nth-child(4) td:nth-child(2){
+    background-color: darkcyan;
+}
+.tabla tbody tr:nth-child(odd){
+    background-color: cornflowerblue;
+}
+.tabla td:hover{
+    cursor: pointer;
+    background-color: darkgoldenrod;
+}
+input[type]{
+    /*Todos los inputs que tengan seteados el atributo
+    type*/
+
+}
+input[type="password"]{
+    /*Todos los inputs que tengan su type="password"*/
+    
+}

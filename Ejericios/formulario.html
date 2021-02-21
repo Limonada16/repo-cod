@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #eee;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Formulario de registro de mascotas - Clínica CodiGo</h1>
+    <p><em>[Alonso Conde Sánchez]</em></p>
+  </header>
+  <hr>
+  <main>
+    <form action="destino.html" method="POST">
+        <fieldset>
+            <legend>Datos del dueño</legend>
+            <div>
+                <label for="nombre">Nombre: </label>
+                <input type="text" id="nombre">
+            </div>
+            <div>
+                <label for="apellidos">apellidos: </label>
+                <input type="text" id="apellidos">
+            </div>
+            <div>
+                <label for="dni">DNI: </label>
+                <input type="number" maxlength="8" id="apellidos">
+            </div>
+            <div>
+                <label for="fecha_nacimiento">Fecha de nacimiento: </label>
+                <input type="date" id="fecha_nacimiento">
+            </div>
+            <div>
+                <label for="direccion">direccion: </label>
+                <textarea type="date" id="direccion">
+            </div>
+            
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos de la mascota</legend>
+            <div>
+                <label for="nombre_masc">Nombre: </label>
+                <input type="text" id="nombre_masc">
+            </div>
+            <div>
+                <label for="edad_masc">Edad: </label>
+                <input type="number" min="0" max="15" id="edad_masc">
+            </div>
+            <div>
+                <label for="raza_masc">Raza: </label>
+                <select name="raza_masc" id="raza_masc">
+                    <option value="1">Dalmata</option>
+                    <option value="2">Chihuahua</option>
+                    <option value="3">Doberman</option>
+                    <option value="4">Schnauzer</option>
+                    <option value="5">Golden</option>
+                </select>
+            </div>
+            <div>
+                <label for="genero">Genero: </label>
+                <input type="radio" name="genero">Macho
+                <input type="radio" name="genero">Hembra
+            </div>
+            <div>
+                <label for="consulta"></label>
+                <textarea name="consulta" id="consulta" maxlength="200" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <label for="fecha_male">Fecha de malestar: </label>
+                <input type="date" id="fecha_male">
+            </div>
+            <div>
+                <label for="fecha_cita">Fecha de cita: </label>
+                <input type="date" id="fecha_cita">
+            </div>
+            <div>
+                <label for="alergias">alergias: </label>
+                <input type="checkbox" id="alergias"> Paracetamol
+                <input type="checkbox" id="alergias1"> Otra vez Paracetamol
+                <input type="checkbox" id="alergias2"> Más Paracetamol
+                <input type="checkbox" id="alergias3"> Paracetamel
+                <input type="checkbox" id="alergias4"> No es alergico
+            </div>
+        </fieldset>
+
+    </form>
+  </main>
+
+</body>
+
+</html>
