@@ -5,6 +5,7 @@ body{
 .header__titulo{
     /*Tipo de letra*/
     font-family: cursive, sans-serif;
+    text-align: center;
 
 }
 .main__titulo{
@@ -19,4 +20,7 @@ body{
 .main__parrafo + p{
     font: normal 500 14px "Raleway", sans-serif;
 
+}
+.main__span{
+    text-align: center;
 }
