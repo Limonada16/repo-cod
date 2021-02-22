@@ -5,7 +5,12 @@ body{
 .header__titulo{
     /*Tipo de letra*/
     font-family: cursive, sans-serif;
+    /*Alineación del texto*/
     text-align: center;
+    /*Espacio entre letras*/
+    letter-spacing: 20px;
+    /*Espacio entre palabras*/
+    word-spacing: 10px;
 
 }
 .main__titulo{
@@ -19,8 +24,12 @@ body{
 }
 .main__parrafo + p{
     font: normal 500 14px "Raleway", sans-serif;
-
+    line-height: 22px;
 }
 .main__span{
     text-align: center;
+}
+a{
+    /*Estilo de link que no tiene decoración en el texto*/
+    text-decoration: none;
 }
