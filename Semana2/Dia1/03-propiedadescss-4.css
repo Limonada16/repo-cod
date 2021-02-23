@@ -17,6 +17,7 @@ header{
 body{
     /*Imagen de fondo en gradiente linear-gradient(grados,primerColor, segundoColor)*/
     background-image: linear-gradient(60deg, #0c0e2e, #3cb6cb);
+    min-height: 100vh;
 }
 /*Estilos al elemento h1*/
 h1{
