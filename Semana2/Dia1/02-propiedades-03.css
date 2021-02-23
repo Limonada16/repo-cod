@@ -1,43 +1,55 @@
+/*Estilos aplicados en general*/
 *{
     /*Reglas del reseteo o reset css*/
-    margin: 0;
-    padding: 0;
+    margin: 0; /*margin -> margen del bloque*/
+    padding: 0; /*padding -> relleno(arr,dere,aba,izqu)*/
 }
+/*Estilos al body*/
 body{
+    /*Color del fondo*/
     background-color: #222;
+    /*Color del texto*/
     color: #eee;
 }
+/*Estilos a la etiqueta h1*/
 h1{
-    width: 600px;
-    text-align: center;
-    background-color: #333;
-    margin-bottom: 10px;
+    width: 600px; /*width -> anchura*/
+    text-align: center; /*Alineación del texto en el centro*/
+    background-color: #333; /*Color del fondo*/
+    margin-bottom: 10px; /*Margen abajo del bloque*/
 }
+/*Estilos a la etiqueta h2*/
 h2{
-    width: 300px;
-    text-align: center;
-    background-color: #444;
+    width: 300px; /*width -> anchura del bloque*/
+    text-align: center; /*Alineación del texto en el centro*/
+    background-color: #444; /*Color del fondo*/
 }
+/*Estilos aplicados a un span dentro del elemento main*/
 main > span{
+    /*Color al fondo*/
     background-color: #555;
     /*A los elementos inline no se 
     les puede poner witdh ni height*/
 }
+/*Estilos aplicados a un elemento con clase .parrafo1*/
 .parrafo1{
-    width: 600px;
-    height: 80px;
-    padding: 20px;
+    width: 600px; /*Width -> Anchura del elemento*/
+    height: 80px; /*Height -> Altura del elemento*/
+    padding: 20px; /*padding -> Relleno del elemento(*20px)arriba, izquierda, derecha, abajo es 20px*/
     background-color: #444;
     /*overflow -> sirve para controlar el
     exceso del tamaño del contenido interno
     del elemento*/
-    overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-x: hidden; /*Overflow-x -> Añade un scroll bar en el x (Hidden) Oculta dicho scroll*/
+    overflow-y: scroll; /*Overflow-y -> Añade un scroll bar en el y (Scroll) Añade dicho scroll*/
 }
+/*Estilos para el elemento section*/
 section{
+    /*Color del fondo del elemento*/
     background-color: #444;
-    padding: 50px;
+    padding: 50px; /*padding -> Relleno del section en 50px en todos los lados*/
 }
+/*Estilos a los h3 que sean descendientes de section*/
 section h3{
-    border: 1px solid yellow;
+    border: 1px solid yellow; /*Border -> aplica estilo al borde(tamaño, estilo, color)*/
 }

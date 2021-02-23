@@ -1,27 +1,39 @@
+/*Estilo al titulo del header (h1) con clase .header__titulo*/
 .header__titulo{
+    /*Alinea el texto en el centro*/
     text-align: center;
     /*Color -> Color del texto*/
     color: #444444; 
 }
+/*Estilo al body*/
 body{
+    /*Añade un color al fondo*/
     background-color: lightcoral;
 }
+/*Estilo al subtitulo (h2) con clase .subtitulo*/
 .subtitulo{
+    /*Aplica un color en rgb (rojo, verde, azul)*/
     color: rgb(200, 50, 0);
 }
+/*Estilo al cuadrado(div) con clase .cuadrado*/
 .cuadrado{
+    /*Width -> Anchura del cuadrado*/
     width: 200px;
+    /*Height -> Altura del cuadrado*/
     height: 200px;
     /*RGBA se usa para la trasnparencia de los colores*/
     background-color: rgba(0, 255, 255, 0.3);
 }
+/*Estilo al cuadrado que sea el segundo hermano de .cuadrado*/
 .cuadrado:nth-child(2){
     /*background-color -> color del fondo*/
     background-color: hsl(180, 100%, 40%);
 }
+/*Estilo al cuadrado que sea el teccer hermano de .cuadrado*/
 .cuadrado:nth-child(3){
     background-color: hsl(180, 100%, 30%);
 }
+/*Estilo al cuadrado que sea el cuarto hermano de .cuadrado*/
 .cuadrado:nth-child(4){
     background-color: hsl(180, 100%, 20%);
 }

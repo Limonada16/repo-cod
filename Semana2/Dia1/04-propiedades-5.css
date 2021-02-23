@@ -1,11 +1,13 @@
+/*Estilos en general a todos los elementos*/
 *{
-    margin: 0;
-    box-sizing: border-box;
-    padding: 0;
+    margin: 0; /*margin -> Aplica margen de 0 a todos lados*/
+    box-sizing: border-box; /*box-sizing -> calcula altura y anchura de los elementos*/
+    padding: 0; /*padding -> Añade relleno de 0 a todos lados*/
 }
+/*Estilos al body*/
 body{
-    background: linear-gradient(#000, pink);
-    border: 1px transparent;
+    background: linear-gradient(#000, pink); /*Fondo en gradiente de color negro a rosa*/
+    border: 1px transparent; /*Añade un borde al body de 1px en color trasnparente*/
     /*Para solucionar el gradiente se usa la 
     altura height: 100vh*/
     /*min-height: debe de medir como minimo
@@ -13,7 +15,8 @@ body{
     min-height: 100vh;
 
 }
+/*Estilos al elemento con clase .parrafo*/
 .parrafo{
-    background-color: yellowgreen;
-    width: 500px;
+    background-color: yellowgreen; /*Color del fondo en amarillo verdoso*/
+    width: 500px; /*width -> anchura del elemento en 500px*/
 }

@@ -1,33 +1,31 @@
 /*Estilos generales para todas las 
 paginas*/
 *{
-    margin: 0;
-    box-sizing: border-box;
-    padding: 0;
+    margin: 0; /*margin -> Margen de 0 para todo los lados*/
+    box-sizing: border-box; /*box-sizing -> Calcula el ancho y alto total del elemento*/
+    padding: 0; /*padding -> Relleno general de los elementos*/
 }
+/*Estilos al elemento header*/
 header{
-    background-image: url(/Semana1/vg.jpg);
-    /*Hacer que la imagen no se repita*/
-    background-repeat: no-repeat;
-    color: white;
-    /*background-size-> sirve para modificar
-    el tamaño del fondo*/
-    background-size: cover;
-    padding: 100px 0px;
+    background-image: url(/Semana1/vg.jpg); /*Imagen de fondo por medio de url*/
+    background-repeat: no-repeat; /*Hacer que la imagen no se repita*/
+    color: white; /*Color del texto en blanco*/
+    background-size: cover; /*background-size-> sirve para modificar el tamaño del fondo*/
+    padding: 100px 0px; /*paddig -> relleno de 100px para arriba y abajo, 0px para izquierda y derecha*/
 }
+/*Estilos al elemento body*/
 body{
+    /*Imagen de fondo en gradiente linear-gradient(grados,primerColor, segundoColor)*/
     background-image: linear-gradient(60deg, #0c0e2e, #3cb6cb);
 }
-
+/*Estilos al elemento h1*/
 h1{
-    font-family: sans-serif;
-    text-align: center;
-    width: 500px;
-    margin: 0 auto;
-    /*Pone un fondo difuminado*/
-    backdrop-filter: blur(5px);
-    padding: 30px;
-    border: 1px solid #333;
-    /*Pone los bordes circulares*/
-    border-radius: 8px;
+    font-family: sans-serif; /*font-family -> fuente de la letra en el h1*/
+    text-align: center; /*Alineación del texto en el centro*/
+    width: 500px; /*Width -> anchura de 500px */
+    margin: 0 auto; /*Margin -> margen de 0 arriba y abajo, auto en izquierda y derecha*/
+    backdrop-filter: blur(5px); /*Pone un fondo difuminado*/
+    padding: 30px; /*padding -> Relleno de 30px en todos lados*/
+    border: 1px solid #333; /*border -> border(tamaño, estilo, color)*/
+    border-radius: 8px; /*Pone los bordes circulares, border-radius(tamaño)*/
 }
