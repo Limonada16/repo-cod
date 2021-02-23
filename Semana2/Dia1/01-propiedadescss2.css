@@ -1,0 +1,27 @@
+.header__titulo{
+    text-align: center;
+    /*Color -> Color del texto*/
+    color: #444444; 
+}
+body{
+    background-color: lightcoral;
+}
+.subtitulo{
+    color: rgb(200, 50, 0);
+}
+.cuadrado{
+    width: 200px;
+    height: 200px;
+    /*RGBA se usa para la trasnparencia de los colores*/
+    background-color: rgba(0, 255, 255, 0.3);
+}
+.cuadrado:nth-child(2){
+    /*background-color -> color del fondo*/
+    background-color: hsl(180, 100%, 40%);
+}
+.cuadrado:nth-child(3){
+    background-color: hsl(180, 100%, 30%);
+}
+.cuadrado:nth-child(4){
+    background-color: hsl(180, 100%, 20%);
+}
