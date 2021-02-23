@@ -1,0 +1,33 @@
+/*Estilos generales para todas las 
+paginas*/
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+header{
+    background-image: url(/Semana1/vg.jpg);
+    /*Hacer que la imagen no se repita*/
+    background-repeat: no-repeat;
+    color: white;
+    /*background-size-> sirve para modificar
+    el tamaño del fondo*/
+    background-size: cover;
+    padding: 100px 0px;
+}
+body{
+    background-image: linear-gradient(60deg, #0c0e2e, #3cb6cb);
+}
+
+h1{
+    font-family: sans-serif;
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;
+    /*Pone un fondo difuminado*/
+    backdrop-filter: blur(5px);
+    padding: 30px;
+    border: 1px solid #333;
+    /*Pone los bordes circulares*/
+    border-radius: 8px;
+}

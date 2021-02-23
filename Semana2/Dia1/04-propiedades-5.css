@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+body{
+    background: linear-gradient(#000, pink);
+    border: 1px transparent;
+    /*Para solucionar el gradiente se usa la 
+    altura height: 100vh*/
+    /*min-height: debe de medir como minimo
+    100vh para que solucionar los gradientes;*/
+    min-height: 100vh;
+
+}
+.parrafo{
+    background-color: yellowgreen;
+    width: 500px;
+}
