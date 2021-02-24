@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+body{
+    background-color: #333;
+}
+.cuadrado{
+    height: 150px;
+    width: 150px;
+    border: 1px solid red;
+}
+.cuadrado:nth-child(1){
+    position: relative;
+    /*position:relative- -> prepara al elemento
+    para que se pueda empezar a mover o cambiar
+    su pocisión*/
+    /*Solo se puede mover desde top o left*/
+    top: 10px;
+    left: calc(100% - 150px);
+}
+.cuadrado:nth-child(2){
+    position: relative;
+    border: 1px solid yellow;
+    left: 50%;
+    /*Left -> Toma el 50% del ancho disponible*/
+    transform: translate(-50%, 0);
+    /*Translate toma el 50% del ancho del elemento*/
+}
+.hijo_absoluto{
+    width: 150px;
+    height: 150px;
+    border: 1px solid pink;
+    position: absolute;
+    
+}
+.hijo_relativo{
+    width: 150px;
+    height: 150px;
+    border: 1px solid green;
+    
+}
