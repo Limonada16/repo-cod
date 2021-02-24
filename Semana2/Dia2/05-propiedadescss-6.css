@@ -1,56 +1,70 @@
-*{
-    margin: 0;
-    box-sizing: border-box;
-    padding: 0;
+* {
+	margin: 0;
+	box-sizing: border-box;
+	padding: 0;
 }
-main{
-    padding-left: 100px;
-}
-body{
-    background-color: #ececec;
+body {
+	background-color: #ececec;
 }
 
-.formulario .card{
-    background-color: white;
-    width: 400px;
-    height: 500px;
-    margin: 100px auto 0 auto;
-    box-shadow: 0px 0px 20px #aaa;
-    border-radius: 8px;
-    border: 1px solid #ccc;
+.header {
+	height: 60px;
+	box-shadow: 0px 4px 12px #bbb;
+	background-color: white;
+	margin-bottom: 50px;
 }
-.card{
-    box-shadow: inset 0px 0px 20px #aaa;
+
+.formulario,
+.card {
+	background-color: white;
+	width: 400px;
+	height: 500px;
+	margin: 100px auto 0 auto;
+	box-shadow: 0px 0px 20px #aaa;
+	border-radius: 8px;
+	border: 1px solid #ccc;
+	transition: all 0.5s ease-out;
+	cursor: pointer;
 }
-.header{
-    height: 60px; /*Altura del header*/
-    box-shadow: 0px 4px 12px #bbb; /*Sombra del bloque (X,Y,PIXELES DE SENFOQUE, COLOR)*/
-    background-color: white;
-    margin-bottom: 50px;
+
+.formulario:hover {
+	box-shadow: 0px 0px 7px #aaa;
 }
-.btn-neo{
-    background-color: #ececec;
-    border: none;
-    outline: none;
-    height: 50px;
-    width: 50px;
-    border-radius: 25px;
-    background: linear-gradient(145deg, #fdfdfd, #d4d4d4);
-    box-shadow:  12px 12px 24px #bababa,
-             -12px -12px 24px #ffffff;
-    transition: all 0.5s ease-in;
+
+.card {
+	box-shadow: inset 0px 0px 20px #aaa;
 }
-.btn-neo:hover{
-    cursor: pointer;
-    background: linear-gradient(145deg, #d4d4d4, #fdfdfd);
-    box-shadow:  12px 12px 24px #bababa,
-             -12px -12px 24px #ffffff;
-    height: 55px;
-    width: 55px;
+main {
+	padding-left: 100px;
+}
+.btn-neo {
+	background-color: #ececec;
+	border: none;
+	outline: none;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	background: linear-gradient(145deg, #fdfdfd, #d4d4d4);
+	box-shadow: 8px 8px 16px #afafaf, -8px -8px 16px #ffffff;
+	cursor: pointer;
+	transition: all 0.5s ease-in;
+}
 
-            }
-
-/*Transition -> tiempo de de transformacion de un estado
-a otro*/
-
-
+.btn-neo:hover {
+	background: linear-gradient(145deg, #d4d4d4, #fdfdfd);
+	box-shadow: 8px 8px 16px #afafaf, -8px -8px 16px #ffffff;
+}
+figure {
+}
+img {
+    filter: blur(5px) grayscale(1);
+	max-width: 100%;
+    transition: all 0.3s ease-in;
+}
+.card:hover img{
+    /*Quien modifica su valor es la imagen
+    cuando se pasa el mouse por encima del 
+    .card*/
+    filter: blur(0) grayscale(0);
+    transform: translate(0, -15px) scale(1) rotate(15deg);
+}
