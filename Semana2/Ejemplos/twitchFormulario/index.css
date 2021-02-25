@@ -1,0 +1,148 @@
+*{
+    font-family: 'Manrope', sans-serif;
+    margin: 0; /*margin -> Aplica margen de 0 a todos lados*/
+    box-sizing: border-box; /*box-sizing -> calcula altura y anchura de los elementos*/
+    padding: 0; /*padding -> Añade relleno de 0 a todos lados*/
+    color: white;
+}
+body{
+    background-color: #121212;
+}
+.formulario{
+    height: 500px;
+    width: 500px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 25%);
+    background-color: #18181b;
+    border-radius: 6px;
+    
+}
+.cabera__twitch{
+    color: white;
+    text-decoration: solid;
+    
+}
+.imagen{
+    font-size: x-large;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    position: relative;
+    text-align: center;
+    border-bottom: 1px solid rgb(77, 77, 77);
+    border-bottom-width: 1px;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    position: relative;
+    bottom: 18px;
+}
+a::before{
+    content: ""; /*En el before y after el content es obligatorio*/
+
+    border-bottom: 2px solid  #6d4b9f;;
+    transition: width 0.5s ease-in, height 0.5s ease-in;
+}
+a:nth-child(2){
+    left: 20px;
+}
+a:nth-child(3){
+    left: 38px;
+}
+a::before:hover{
+    cursor: pointer;
+    color: #6d4b9f;
+    width: 100%;
+}
+.div__nombreusuario{
+    padding-bottom: 20px;
+}
+.div__contrasena{
+    padding-bottom: 20px;
+}
+label{
+    position: relative;
+    left: 10px;
+    font-weight: bold;
+    
+}
+input{
+    width: 90%;
+    padding-top: 5px;
+    border-radius: 6px;
+    transform: translate(4%);
+}
+.button__formulario{
+    background-color: #9147ff;
+    width: 90%;
+    height: 35px;
+    position: relative;
+    transform: translate(4%);
+    border-radius: 4px;
+    border-color: transparent;
+
+}
+.button__formulario:hover{
+    cursor: pointer;
+    background-color: #772ce8;
+}
+input[type=text]{
+    position: relative;
+    border-color: transparent;
+    width: 90%;
+    padding: 8px 20px;
+    margin: 8px 0;
+    background-color: #464649;
+    display: inline-block;
+    color: black;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=password]{
+    position: relative;
+    border-color: transparent;
+    width: 90%;
+    padding: 8px 20px;
+    margin: 8px 0;
+    background-color: #464649;
+    display: inline-block;
+    color: black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    
+}
+input:focus{
+    background-color: #000000;
+    border-color: #772ce8;
+}
+.span__problemas{
+    position: relative;
+    left: 10px;
+    color: #772ce8;
+}
+.formulario__twitch{
+    border-bottom: 1px solid rgb(77, 77, 77);
+    padding-bottom: 30px;
+}
+.btnFacebook__twitch{
+    padding-top: 30px;    
+}
+.btn__facebook{
+    width: 40%;
+    height: 35px;
+    left: -50%;
+    position: relative;
+    transform: translate(200%);
+    background-color: #3b5998;
+    border-color: transparent;
+}
+.btn__facebook:hover{
+    background-color: #516aab;
+    cursor: pointer;
+}
+
+
+
+
