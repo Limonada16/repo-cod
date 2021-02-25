@@ -1,0 +1,90 @@
+/*Para comentar ctrl + }*/
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    
+}
+body{
+    background-color: #333;
+    color: #f4f4f4;
+    font-family: sans-serif;
+    padding: 20px;
+}
+.parrafo1::before{
+    content: "++"
+}
+.parrafo1::after{
+    content: "++";
+}
+.parrafo2::before{
+    color:black;
+    content: "";
+    border: 1px solid yellow;
+    transform: rotate(135deg);
+    width: 5px;
+    height: 5px;
+    display: inline-block;/*Un elemento puede ser block se le da algura y anchira
+    si el elemento es inline-blck, que actuan al rededor de otros elementos*/
+
+}
+.parrafo2::after{
+    color:black;
+    content: "";
+    border: 1px solid yellow;
+    transform: rotate(135deg);
+    width: 5px;
+    height: 5px;
+    display: inline-block;/*Un elemento puede ser block se le da algura y anchira
+    si el elemento es inline-blck, que actuan al rededor de otros elementos*/
+
+}
+.link{
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+.link::before{
+    content: ""; /*En el before y after el content es obligatorio*/
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid rgb(245, 245, 108);
+    transition: width 0.5s ease-in, height 0.5s ease-in;
+}
+/*Se aplicaran estilos cuando el mouse pase por el elemento
+.link pero los cambios serán afectrados al elemento before*/
+.link:hover::before{
+    width: 100%;
+}
+.card{
+    margin-top: 20px;
+    width: 300px;
+    
+    background-color: #111;
+    border-radius: 15px;
+    position: relative;
+    padding: 10px 14px;
+    
+    
+}
+/*Poner marco en color gradiente*/
+.card::before{
+    content: "";
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    background: linear-gradient(25deg, rgb(207, 207, 207), rgb(238, 238, 144));
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    z-index: -2;
+    border-radius: 15px;
+}
+/*Poner texto en color gradiente*/
+.card h3 {
+    
+    background: linear-gradient(25deg, rgb(197, 32, 32), rgb(114, 25, 110));
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
