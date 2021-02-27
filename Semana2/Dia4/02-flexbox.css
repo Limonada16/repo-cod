@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+body{
+    background-color: #333;
+    color: white;
+}
+.contenedor{
+    border: 1px solid yellow;
+    /*Alinea todos sus hijos a la derecha
+    los hijos adoptan la altura del padre
+    y la anchura que su contenido puede generar*/
+    display: flex;
+    height: 300px;
+    /*Significa los elementos se aplilan en una 
+    columno uno al lado de tro*/
+    flex-direction: row;
+    /*Significa los elementos se aplilan en una 
+    sola columna uno abajo del otro*/
+    /* flex-direction: column; */
+    /*Los hijos no desbordan aun asi si necesite
+    mas espacio del que tienen*/
+    /*Propiedad por defecto*/
+    /* flex-wrap: nowrap; */
+
+    flex-wrap: wrap;
+
+    /*Alieneación*/
+    /*alinea los elementos en el eje principal
+    segun sean en row(X) column(Y)*/
+    justify-content: space-between;
+    
+    /*align-items -> alinea todos los elementos al 
+    eje scundario*/
+    align-items: center;
+    
+}
+.contenedor > div{
+    border: 1px solid;
+}
+.hijo-1{
+    width: 100PX;
+    height: 100px;
+    /*flex-grow*/
+    flex: 2;
+}
+.hijo-2{
+    width: 100PX;
+    height: 100px;
+    /*flex-grow*/
+    flex: 1;
+}
+.hijo-3{
+    width: 100PX;
+    height: 100px;
+    /*flex-grow*/
+    flex: 1;
+}
+.hijo-4{
+    width: 100PX;
+    height: 100px;
+    /*flex-grow*/
+    flex: 1;
+    
+}

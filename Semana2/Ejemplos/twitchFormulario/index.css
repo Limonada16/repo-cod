@@ -96,7 +96,7 @@ input[type=text]{
     margin: 8px 0;
     background-color: #464649;
     display: inline-block;
-    color: black;
+    color: white;
     border-radius: 4px;
     box-sizing: border-box;
 }
@@ -108,7 +108,7 @@ input[type=password]{
     margin: 8px 0;
     background-color: #464649;
     display: inline-block;
-    color: black;
+    color: white;
     border-radius: 4px;
     box-sizing: border-box;
     
