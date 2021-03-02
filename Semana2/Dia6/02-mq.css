@@ -1,0 +1,22 @@
+.container{
+    max-width: 1440px;
+    display: flex;
+    height: 600px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.left{
+    background-color: chocolate;
+    flex: 1;
+}
+.right{
+    background-color: coral;
+    flex: 1;
+}
+@media(max-width: 760px){
+    .left,
+    .right{
+        flex: 1;
+    }
+
+}
