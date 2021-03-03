@@ -26,25 +26,56 @@
         </button>
     </header>
     <main class="main">
-        <aside class="sidebar">
+        <aside class="sidebar open-mobile">
             <div class="sidebar__profile">
                 <figure class="sidebar__picture">
                     <img src="programmer.png" alt="">
                 </figure>
                 <p class="sidebar__name">Jorge Garnica</p>
             </div>
+            <button class="">
+                &#9776;
+            </button>
             <nav class="sidebar__nav">
                 <ul class="sidebar__list">
                     <li class="sidebar__item">
                         <a href="#" class="sidebar__link">
-                           <i class="fa fa-desktop" aria-hidden="true"></i> Dashboard
+                            <i class="fa fa-desktop" aria-hidden="true"></i> <span class="nombre">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="#" class="sidebar__link">
+                            <i class="fa fa-desktop" aria-hidden="true"></i><span class="nombre">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="#" class="sidebar__link">
+                            <i class="fa fa-desktop" aria-hidden="true"></i><span class="nombre">Dashboard</span>
                         </a>
                     </li>
                 </ul>
             </nav>
         </aside>
-        <section class="main__container"></section>
+        <section class="main__container">
+            CONTENIDO DE LA PAGINA
+        </section>
     </main>
+    <script>
+        const btnHeaderMenu = document.querySelector("button.header__menu");
+        const asideSideBar = document.querySelector("aside.sidebar");
+        btnHeaderMenu.onclick = e => {
+            asideSideBar.classList.toggle("open");
+        }
+        const btnSideBarMenu = document.querySelector("button.sidebar__menu");
+        btnSideBarMenu.onclick = e => {
+            asideSideBar.classList.toggle("open-mobile");
+        }
+        const mql = window.matchMedia('(max-width: 480px)');
+        function screenTest(e) {
+            e.matches && asideSideBar.classList.remove("open");
+        }
+        mql.addListener(screenTest);
+    </script>
 
 </body>
 
