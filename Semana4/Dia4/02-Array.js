@@ -27,7 +27,7 @@ console.log(nuevasEdades);
 
 console.log("*************ProbandoFuncionFilter*************");
 /**
- * Arrelo.filder((elemento,i)=>{})
+ * Arrelo.filter((elemento,i)=>{})
  * filtra los elementos en cada iteración y retorna un nuevo arreglo con los elementos que 
  * unicamente han sido filtrados.
  * OJO: EL FILTRO DEBE SER CONDICIONAL
